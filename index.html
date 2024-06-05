@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admissions Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="admissionsForm" action="/submit" method="POST">
+        <h1 style="text-align: center;">FORM</h1>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required><br><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="program">Program of Interest:</label>
+        <select id="program" name="program">
+            <option value="Computer Science">Computer Science</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Business">Business</option>
+            <option value="Biology">Biology</option>
+        </select><br><br>
+        
+        <label for="essay">Essay:</label><br>
+        <textarea id="essay" name="essay" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="transcript">Transcript:</label>
+        <input type="file" id="transcript" name="transcript" accept=".pdf,.doc,.docx" required><br><br>
+        
+        <label for="recommendation">Recommendation Letter:</label>
+        <input type="file" id="recommendation" name="recommendation" accept=".pdf,.doc,.docx" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
